@@ -16,8 +16,8 @@
 <header class="hero">
   <div class="text">
     <h1>Hi I&rsquo;m <span class="name">Sam.</span></h1>
-    <p class="lede">I build and test the electronics and data systems that show engineers what a vehicle is actually doing.</p>
-    <p class="bio">Mechanical engineering student with an electrical engineering minor at the University of Rochester. I lead electronics and data acquisition for our Baja SAE team, and I spent last summer on the vehicle integration and test team at Aurora Innovation.</p>
+    <p class="lede">I build and test electronics and hardware.</p>
+    <p class="bio">I'm a mechanical engineering student at the University of Rochester. I spent last summer on the Vehicle Integration Test & Evaluation team at Aurora Innovation. I'm currently the Electronics and Data Acquisition lead for University of Rochester Yellowjacket Racing.</p>
     <div class="actions">
       <a class="icon" href="https://github.com/Vespertilo" aria-label="GitHub" target="_blank" rel="noopener">
         <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
@@ -79,6 +79,16 @@ const PROJECTS = [
     text: 'I took a CVT data acquisition system from a breadboard on a test bench to a custom KiCad PCB over three design iterations. The final board ran for over two hours. The telemetry let me build MATLAB tools to optimize the transmission shift curve, and the system now supports our full vehicle dynamic model.',
     tags: 'Teensy 4.1, C++, KiCad, MATLAB',
     imgs: ['cvt-daq-1.jpg','cvt-daq-2.jpg','cvt-daq-3.jpg'] },
+  { title: 'Vehicle Integration Test & Evaluation at Aurora',
+    result: 'Saved the team 20+ hours per testing cycle',
+    text: 'On the vehicle integration test and evaluation team for the Aurora Driver 2.0 release, I created/updated 30+ test plans, validated results from on-track testing, and built tools to speed up post-test analysis. I also moved a subset of track tests into an offline simulation environment to cut down on time on the track.',
+    tags: 'Test planning, data analysis, simulation',
+    imgs: ['aurora-1.jpg','aurora-2.jpg'] },
+  { title: 'Wheel Force Transducer Testing',
+    result: 'Measured real wheel load cases in on track tests',
+    text: 'I set up and helped lead a testing cycle with a Michigan Scientific Wheel Force Transducer to measure the forces and moments on a wheel. We collected data from four linear potentiometers on the shocks at the same time, which gave us a second measurement to validate our load cases against.',
+    tags: 'Wheel force transducer, linear potentiometers, data validation',
+    imgs: ['wft-1.jpg','wft-2.jpg','wft-3.jpg'] },
   { title: 'Modular CAN Bus Data Acquisition',
     result: 'In development as subsystem lead',
     text: 'A modular system on custom STM32 hardware, built to survive vibration, mud, moisture, and EMI. I chose CAN bus for noise resistance and am designing the enclosures to the IP67 waterproof standard.',
@@ -89,16 +99,6 @@ const PROJECTS = [
     text: 'My subsystem owns the steering wheel this year. It holds a 4.3\u2033 display showing live data to the driver and a custom quick release. I designed it in NX and analyzed it for the loads the driver and the car produce on track.',
     tags: 'Siemens NX, structural analysis, embedded display',
     imgs: ['steering-wheel-1.jpg','steering-wheel-2.jpg','steering-wheel-3.jpg'] },
-  { title: 'Wheel Force Transducer Testing',
-    result: 'Measured real wheel loads over obstacles',
-    text: 'I set up and helped lead a testing cycle with a Michigan Scientific Wheel Force Transducer to measure the forces and moments on a wheel. We collected data from four linear potentiometers on the shocks at the same time, which gave us a second measurement to validate our load cases against.',
-    tags: 'Wheel force transducer, linear potentiometers, data validation',
-    imgs: ['wft-1.jpg','wft-2.jpg','wft-3.jpg'] },
-  { title: 'Vehicle Integration Test & Evaluation at Aurora',
-    result: 'Saved the team 20+ hours per testing cycle',
-    text: 'On the vehicle integration test and evaluation team for the Aurora Driver 2.0 release, I created/updated 30+ test plans, validated results from on-track testing, and built tools to speed up post-test analysis. I also moved a subset of track tests into an offline simulation environment to cut down on time on the track.',
-    tags: 'Test planning, data analysis, simulation',
-    imgs: ['aurora-1.jpg','aurora-2.jpg'] },
   { title: 'Model rocket',
     result: '1,500 ft apogee at Mach 0.6',
     text: 'Led a launch that reached 1,500 feet at Mach 0.6. I calculated the aerodynamic forces for stability, designed the fin can and nose cone in Fusion 360 and 3D printed them, wired a fail-safe launch controller, and built a portable launch pad.',
