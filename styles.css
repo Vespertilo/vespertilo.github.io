@@ -4,7 +4,7 @@
   --sans:'Public Sans',system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;
 }
 @media (prefers-color-scheme:dark){
-  :root{--bg:#10141a; --ink:#e9edf3; --muted:#9aa4b2; --line:#262d38; --accent:#7fa8dc; --name:#7fa8dc; --card:#161b23; --ph:#1c232d}
+  :root{--bg:#10141a; --ink:#e9edf3; --muted:#9aa4b2; --line:#262d38; --accent:#a4c1e7; --name:#a5c5da; --card:#161b23; --ph:#1c232d}
 }
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
@@ -58,7 +58,7 @@ dialog{padding:0;border:1px solid var(--line);border-radius:8px;background:var(-
 dialog::backdrop{background:rgba(10,14,20,.6)}
 .m-body{display:grid;grid-template-columns:1.25fr 1fr;gap:28px;padding:24px}
 .m-stage{position:relative;aspect-ratio:4/3;background:var(--ph);border-radius:6px;overflow:hidden}
-.m-stage img{width:100%;height:100%;object-fit:cover;display:block}
+.m-stage img{width:100%;height:100%;object-fit:contain;display:block}
 .m-empty{position:absolute;inset:0;display:none;place-items:center;padding:20px;text-align:center;color:var(--muted);font-size:.9rem}
 .m-stage.none .m-empty{display:grid}
 .m-stage.none img{display:none}

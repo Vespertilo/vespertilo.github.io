@@ -1,185 +1,217 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Sam Tarr | Mechanical &amp; Electrical Engineering</title>
-<meta name="description" content="Sam Tarr's portfolio">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,500;6..72,600&family=Public+Sans:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sam Tarr | Mechanical &amp; Electrical Engineering</title>
+  <meta name="description" content="Sam Tarr's portfolio">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,500;6..72,600&family=Public+Sans:wght@400;500;600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-<main>
+  <main>
 
-<header class="hero">
-  <div class="text">
-    <h1>Hi I&rsquo;m <span class="name">Sam.</span></h1>
-    <p class="lede">I build and test electronics and hardware.</p>
-    <p class="bio">I'm a mechanical engineering student at the University of Rochester. I spent last summer on the Vehicle Integration Test & Evaluation team at Aurora Innovation. I'm currently the Electronics and Data Acquisition lead for University of Rochester Yellowjacket Racing.</p>
-    <div class="actions">
-      <a class="icon" href="https://github.com/Vespertilo" aria-label="GitHub" target="_blank" rel="noopener">
-        <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
-      </a>
-      <a class="icon" href="https://linkedin.com/in/sam-tarr" aria-label="LinkedIn" target="_blank" rel="noopener">
-        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
-      </a>
-      <a class="btn" href="resume.html">Resume</a>
-    </div>
-  </div>
-  <figure class="avatar empty">
-    <img src="Assets/Images/profile.jpg" alt="Photo of Sam Tarr" onload="this.parentNode.classList.remove('empty')" onerror="this.parentNode.classList.add('empty')">
-  </figure>
-</header>
-
-<section aria-labelledby="projects-h">
-  <h2 id="projects-h">Projects</h2>
-  <div class="grid" id="grid"></div>
-</section>
-
-<section aria-labelledby="skills-h">
-  <h2 id="skills-h">Skills</h2>
-  <dl class="skills">
-    <dt>Electrical</dt><dd>PCB design (KiCad), CAN bus, STM32, Teensy, analog and digital circuits, soldering</dd>
-    <dt>Programming</dt><dd>C++, Python, MATLAB, C#, ROS / ROS2</dd>
-    <dt>CAD</dt><dd>Siemens NX, Fusion 360, Onshape</dd>
-    <dt>Manufacturing</dt><dd>3D printing, laser cutting, hand tools</dd>
-  </dl>
-</section>
-
-</main>
-
-<dialog id="modal" aria-labelledby="m-title">
-  <button class="close" id="m-close" aria-label="Close">&times;</button>
-  <div class="m-body">
-    <div>
-      <div class="m-stage" id="m-stage">
-        <img id="m-img" alt="">
-        <div class="m-empty" id="m-empty"></div>
-        <button class="nav-btn prev" id="m-prev" aria-label="Previous photo">&lsaquo;</button>
-        <button class="nav-btn next" id="m-next" aria-label="Next photo">&rsaquo;</button>
+    <header class="hero">
+      <div class="text">
+        <h1>Hi I&rsquo;m <span class="name">Sam.</span></h1>
+        <p class="lede">I build and test electronics and hardware.</p>
+        <p class="bio">I'm a mechanical engineering student at the University of Rochester. I spent last summer on the
+          Vehicle Integration Test & Evaluation team at Aurora Innovation. I'm currently the Electronics and Data
+          Acquisition lead for University of Rochester Yellowjacket Racing.</p>
+        <div class="actions">
+          <a class="icon" href="https://github.com/Vespertilo" aria-label="GitHub" target="_blank" rel="noopener">
+            <svg viewBox="0 0 16 16" aria-hidden="true">
+              <path
+                d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z" />
+            </svg>
+          </a>
+          <a class="icon" href="https://linkedin.com/in/sam-tarr" aria-label="LinkedIn" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+            </svg>
+          </a>
+          <a class="btn" href="resume.html">Resume</a>
+        </div>
       </div>
-      <div class="dots" id="m-dots"></div>
+      <figure class="avatar empty">
+        <img src="Assets/Images/profile.jpg" alt="Photo of Sam" onload="this.parentNode.classList.remove('empty')"
+          onerror="this.parentNode.classList.add('empty')">
+      </figure>
+    </header>
+
+    <section aria-labelledby="projects-h">
+      <h2 id="projects-h">Projects</h2>
+      <div class="grid" id="grid"></div>
+    </section>
+
+    <section aria-labelledby="skills-h">
+      <h2 id="skills-h">Skills</h2>
+      <dl class="skills">
+        <dt>Electrical</dt>
+        <dd>PCB design (KiCad), CAN bus, STM32 development, analog and digital circuits, soldering</dd>
+        <dt>CAD</dt>
+        <dd>Siemens NX, Fusion 360, Onshape</dd>
+        <dt>Manufacturing</dt>
+        <dd>Mill, Lathe, 3D printing, </dd>
+        <dt>Programming</dt>
+        <dd>C++, Python, MATLAB, C#, ROS / ROS2</dd>
+      </dl>
+    </section>
+
+  </main>
+
+  <dialog id="modal" aria-labelledby="m-title">
+    <button class="close" id="m-close" aria-label="Close">&times;</button>
+    <div class="m-body">
+      <div>
+        <div class="m-stage" id="m-stage">
+          <img id="m-img" alt="">
+          <div class="m-empty" id="m-empty"></div>
+          <button class="nav-btn prev" id="m-prev" aria-label="Previous photo">&lsaquo;</button>
+          <button class="nav-btn next" id="m-next" aria-label="Next photo">&rsaquo;</button>
+        </div>
+        <div class="dots" id="m-dots"></div>
+      </div>
+      <div class="m-text">
+        <h2 id="m-title"></h2>
+        <p class="res" id="m-res"></p>
+        <p id="m-text"></p>
+        <p class="tags" id="m-tags"></p>
+      </div>
     </div>
-    <div class="m-text">
-      <h2 id="m-title"></h2>
-      <p class="res" id="m-res"></p>
-      <p id="m-text"></p>
-      <p class="tags" id="m-tags"></p>
-    </div>
-  </div>
-</dialog>
+  </dialog>
 
-<script>
-const IMG = 'Assets/Images/';
-const PROJECTS = [
-  { title: 'Drivetrain Data Acquisition',
-    result: 'Cut our 100m acceleration time by 0.200 s',
-    text: 'I took a CVT data acquisition system from a breadboard on a test bench to a custom KiCad PCB over three design iterations. The final board ran for over two hours. The telemetry let me build MATLAB tools to optimize the transmission shift curve, and the system now supports our full vehicle dynamic model.',
-    tags: 'Teensy 4.1, C++, KiCad, MATLAB',
-    imgs: ['cvt-daq-1.jpg','cvt-daq-2.jpg','cvt-daq-3.jpg'] },
-  { title: 'Vehicle Integration Test & Evaluation at Aurora',
-    result: 'Saved the team 20+ hours per testing cycle',
-    text: 'On the vehicle integration test and evaluation team for the Aurora Driver 2.0 release, I created/updated 30+ test plans, validated results from on-track testing, and built tools to speed up post-test analysis. I also moved a subset of track tests into an offline simulation environment to cut down on time on the track.',
-    tags: 'Test planning, data analysis, simulation',
-    imgs: ['aurora-1.jpg','aurora-2.jpg'] },
-  { title: 'Wheel Force Transducer Testing',
-    result: 'Measured real wheel load cases in on track tests',
-    text: 'I set up and helped lead a testing cycle with a Michigan Scientific Wheel Force Transducer to measure the forces and moments on a wheel. We collected data from four linear potentiometers on the shocks at the same time, which gave us a second measurement to validate our load cases against.',
-    tags: 'Wheel force transducer, linear potentiometers, data validation',
-    imgs: ['wft-1.jpg','wft-2.jpg','wft-3.jpg'] },
-  { title: 'Modular CAN Bus Data Acquisition',
-    result: 'In development as subsystem lead',
-    text: 'A modular system on custom STM32 hardware, built to survive vibration, mud, moisture, and EMI. I chose CAN bus for noise resistance and am designing the enclosures to the IP67 waterproof standard.',
-    tags: 'STM32, CAN bus, PCB design, IP67 enclosures',
-    imgs: ['can-daq-1.jpg','can-daq-2.jpg','can-daq-3.jpg'] },
-  { title: 'Steering Wheel With Live Display',
-    result: 'Designed, analyzed, and manufactured end to end',
-    text: 'My subsystem owns the steering wheel this year. It holds a 4.3\u2033 display showing live data to the driver and a custom quick release. I designed it in NX and analyzed it for the loads the driver and the car produce on track.',
-    tags: 'Siemens NX, structural analysis, embedded display',
-    imgs: ['steering-wheel-1.jpg','steering-wheel-2.jpg','steering-wheel-3.jpg'] },
-  { title: 'Model rocket',
-    result: '1,500 ft apogee at Mach 0.6',
-    text: 'Led a launch that reached 1,500 feet at Mach 0.6. I calculated the aerodynamic forces for stability, designed the fin can and nose cone in Fusion 360 and 3D printed them, wired a fail-safe launch controller, and built a portable launch pad.',
-    tags: 'Fusion 360, 3D printing, launch controller',
-    imgs: ['rocket-1.jpg','rocket-2.jpg','rocket-3.jpg'] },
-  { title: 'Self-balancing inverted pendulum',
-    result: 'Built from scratch for a STEM symposium',
-    text: 'Designed the pendulum from scratch in Fusion 360 and implemented a PID controller in C++ to balance it.',
-    tags: 'Fusion 360, C++, PID control',
-    imgs: ['pendulum-1.jpg','pendulum-2.jpg'] }
-];
+  <script>
+    const IMG = 'Assets/Images/';
+    const PROJECTS = [
+      {
+        title: 'Vehicle Integration Test & Evaluation at Aurora',
+        result: 'Worked as a test engineer, creating test plans and validating test results. Also built multiple bespoke tools to streamline post-test analysis process.',
+        text: 'On the vehicle integration test and evaluation team for the Aurora Driver 2.0 release, I created/updated 30+ test plans, validated results from on-track testing, and built tools to speed up post-test analysis. I also moved a subset of track tests into an offline simulation environment to cut down on time on the track.',
+        tags: 'Test planning, data analysis, simulation',
+        imgs: ['aurora-1.jpg', 'aurora-2.jpg']
+      },
+      {
+        title: 'Drivetrain Data Acquisition',
+        result: 'Designed and built a data acquisition board that collects RPM data on our Baja car\'s transmission.',
+        text: 'I designed a custom PCB in KiCad to measure engine RPM and CVT secondary RPM. The shift data is currently being used to tune our CVT for YJR \'27.',
+        tags: 'Teensy 4.1, C++, KiCad, MATLAB',
+        imgs: ['cvt-daq-1.jpg', 'cvt-daq-2.jpg', 'cvt-daq-3.jpg', 'cvt-daq-4.jpg']
+      },
+      {
+        title: 'Wheel Force Transducer Testing',
+        result: 'Developed test plans for the Wheel Force Transducer and ran testing to collect load cases to aid with the development of YJR \'27.',
+        text: 'I set up and helped lead a testing cycle with a Michigan Scientific Wheel Force Transducer to measure the forces and moments on a wheel. We collected data from four linear potentiometers on the shocks simultaneously, which allowed us to validate our data.',
+        tags: 'Wheel force transducer, linear potentiometers, data validation',
+        imgs: ['wft-1.jpg', 'wft-2.jpg', 'wft-3.jpg']
+      },
+      {
+        title: 'YJR \'27 Steering Wheel',
+        result: 'Designed, analyzed, and currently manufacturing',
+        text: 'Designed the wheel for University of Rochester Baja SAE\'s 2027 car in NX, containing a 4.3\u2033 display and custom PCB with an STM32. Capable of displaying live sensor data to the driver that it recieves over CAN bus. FEA was done to ensure it is strong enough for use during competition. A custom quick release was also designed and prototyped.',
+        tags: 'Siemens NX, FEA, Enclosure Design, Embedded Systems',
+        imgs: ['steering-wheel-1.jpg', 'steering-wheel-2.jpg', 'steering-wheel-3.jpg']
+      },
+      {
+        title: 'Modular CAN Bus Data Acquisition',
+        result: 'STM32 Based CAN Bus modular DAQ system that allows for collecting data from new sensors in minutes.',
+        text: 'A modular system built on a custom STM32 PCB. There are multiple CAN bus nodes throughout the car, each of them having sensors in its proximity wired.',
+        tags: 'STM32 development, CAN bus, PCB design, Enclosure Design',
+        imgs: ['can-daq-1.jpg', 'can-daq-2.jpg', 'can-daq-3.jpg']
+      },
+      {
+        title: 'Model rocket',
+        result: '1,500 ft apogee at Mach 0.6',
+        text: 'Led a launch that reached 1,500 feet at Mach 0.6. I calculated the aerodynamic forces for stability, designed the fin can and nose cone in Fusion 360 and 3D printed them, wired a fail-safe launch controller, and built a portable launch pad.',
+        tags: 'Fusion 360, 3D printing, launch controller',
+        imgs: ['rocket-1.jpg', 'rocket-2.jpg', 'rocket-3.jpg']
+      },
+      {
+        title: 'Self-balancing inverted pendulum',
+        result: 'Built from scratch for a STEM symposium',
+        text: 'Designed the pendulum from scratch in Fusion 360 and implemented a PID controller in C++ to balance it.',
+        tags: 'Fusion 360, C++, PID control',
+        imgs: ['pendulum-1.jpg', 'pendulum-2.jpg']
+      }
+    ];
 
-const $ = id => document.getElementById(id);
-const exists = src => new Promise(r => { const i = new Image(); i.onload = () => r(true); i.onerror = () => r(false); i.src = src; });
-const grid = $('grid'), modal = $('modal');
-let cur = null, idx = 0;
+    const $ = id => document.getElementById(id);
+    const exists = src => new Promise(r => { const i = new Image(); i.onload = () => r(true); i.onerror = () => r(false); i.src = src; });
+    const grid = $('grid'), modal = $('modal');
+    let cur = null, idx = 0;
 
-PROJECTS.forEach((p, i) => {
-  p.ok = [];
-  const b = document.createElement('button');
-  b.className = 'card';
-  b.setAttribute('aria-haspopup', 'dialog');
-  b.innerHTML = '<div class="thumb empty"><img alt=""></div><div class="info"><h3></h3><p class="res"></p></div>';
-  b.querySelector('h3').textContent = p.title;
-  b.querySelector('.res').textContent = p.result;
-  b.addEventListener('click', () => open(i));
-  grid.appendChild(b);
-  Promise.all(p.imgs.map(n => exists(IMG + n))).then(r => {
-    p.ok = p.imgs.filter((_, k) => r[k]).map(n => IMG + n);
-    if (p.ok.length) {
-      const t = b.querySelector('.thumb');
-      t.querySelector('img').src = p.ok[0];
-      t.classList.remove('empty');
+    PROJECTS.forEach((p, i) => {
+      p.ok = [];
+      const b = document.createElement('button');
+      b.className = 'card';
+      b.setAttribute('aria-haspopup', 'dialog');
+      b.innerHTML = '<div class="thumb empty"><img alt=""></div><div class="info"><h3></h3><p class="res"></p></div>';
+      b.querySelector('h3').textContent = p.title;
+      b.querySelector('.res').textContent = p.result;
+      b.addEventListener('click', () => open(i));
+      grid.appendChild(b);
+      Promise.all(p.imgs.map(n => exists(IMG + n))).then(r => {
+        p.ok = p.imgs.filter((_, k) => r[k]).map(n => IMG + n);
+        if (p.ok.length) {
+          const t = b.querySelector('.thumb');
+          t.querySelector('img').src = p.ok[0];
+          t.classList.remove('empty');
+        }
+      });
+    });
+
+    function show(n) {
+      const p = PROJECTS[cur], list = p.ok, stage = $('m-stage');
+      stage.classList.toggle('none', !list.length);
+      stage.classList.toggle('single', list.length === 1);
+      if (!list.length) {
+        $('m-empty').textContent = 'Add photos to ' + IMG + ' (' + p.imgs.join(', ') + ')';
+        $('m-dots').innerHTML = '';
+        return;
+      }
+      idx = (n + list.length) % list.length;
+      $('m-img').src = list[idx];
+      $('m-img').alt = p.title + ', photo ' + (idx + 1) + ' of ' + list.length;
+      const dots = $('m-dots');
+      dots.innerHTML = '';
+      if (list.length > 1) list.forEach((_, k) => {
+        const d = document.createElement('button');
+        d.setAttribute('aria-label', 'Photo ' + (k + 1));
+        if (k === idx) d.setAttribute('aria-current', 'true');
+        d.addEventListener('click', () => show(k));
+        dots.appendChild(d);
+      });
     }
-  });
-});
 
-function show(n) {
-  const p = PROJECTS[cur], list = p.ok, stage = $('m-stage');
-  stage.classList.toggle('none', !list.length);
-  stage.classList.toggle('single', list.length === 1);
-  if (!list.length) {
-    $('m-empty').textContent = 'Add photos to ' + IMG + ' (' + p.imgs.join(', ') + ')';
-    $('m-dots').innerHTML = '';
-    return;
-  }
-  idx = (n + list.length) % list.length;
-  $('m-img').src = list[idx];
-  $('m-img').alt = p.title + ', photo ' + (idx + 1) + ' of ' + list.length;
-  const dots = $('m-dots');
-  dots.innerHTML = '';
-  if (list.length > 1) list.forEach((_, k) => {
-    const d = document.createElement('button');
-    d.setAttribute('aria-label', 'Photo ' + (k + 1));
-    if (k === idx) d.setAttribute('aria-current', 'true');
-    d.addEventListener('click', () => show(k));
-    dots.appendChild(d);
-  });
-}
+    function open(i) {
+      cur = i; idx = 0;
+      const p = PROJECTS[i];
+      $('m-title').textContent = p.title;
+      $('m-res').textContent = p.result;
+      $('m-text').textContent = p.text;
+      $('m-tags').textContent = p.tags;
+      show(0);
+      document.documentElement.classList.add('lock');
+      modal.showModal();
+    }
 
-function open(i) {
-  cur = i; idx = 0;
-  const p = PROJECTS[i];
-  $('m-title').textContent = p.title;
-  $('m-res').textContent = p.result;
-  $('m-text').textContent = p.text;
-  $('m-tags').textContent = p.tags;
-  show(0);
-  document.documentElement.classList.add('lock');
-  modal.showModal();
-}
-
-$('m-prev').addEventListener('click', () => show(idx - 1));
-$('m-next').addEventListener('click', () => show(idx + 1));
-$('m-close').addEventListener('click', () => modal.close());
-modal.addEventListener('click', e => { if (e.target === modal) modal.close(); });
-modal.addEventListener('close', () => document.documentElement.classList.remove('lock'));
-modal.addEventListener('keydown', e => {
-  if (e.key === 'ArrowLeft') show(idx - 1);
-  if (e.key === 'ArrowRight') show(idx + 1);
-});
-</script>
+    $('m-prev').addEventListener('click', () => show(idx - 1));
+    $('m-next').addEventListener('click', () => show(idx + 1));
+    $('m-close').addEventListener('click', () => modal.close());
+    modal.addEventListener('click', e => { if (e.target === modal) modal.close(); });
+    modal.addEventListener('close', () => document.documentElement.classList.remove('lock'));
+    modal.addEventListener('keydown', e => {
+      if (e.key === 'ArrowLeft') show(idx - 1);
+      if (e.key === 'ArrowRight') show(idx + 1);
+    });
+  </script>
 </body>
+
 </html>
