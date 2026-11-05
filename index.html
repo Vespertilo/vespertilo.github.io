@@ -23,21 +23,15 @@
         <p class="lede">I build and test electronics and hardware.</p>
         <p class="bio">I'm a mechanical engineering student at the University of Rochester. I spent last summer on the
           Vehicle Integration Test & Evaluation team at Aurora Innovation. I'm currently the Electronics and Data
-          Acquisition lead for University of Rochester Yellowjacket Racing.</p>
+          Acquisition lead for University of Rochester Baja SAE (Yellowjacket Racing).</p>
         <div class="actions">
-          <a class="icon" href="https://github.com/Vespertilo" aria-label="GitHub" target="_blank" rel="noopener">
-            <svg viewBox="0 0 16 16" aria-hidden="true">
-              <path
-                d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z" />
-            </svg>
-          </a>
           <a class="icon" href="https://linkedin.com/in/sam-tarr" aria-label="LinkedIn" target="_blank" rel="noopener">
             <svg viewBox="0 0 24 24" aria-hidden="true">
               <path
                 d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
             </svg>
           </a>
-          <a class="btn" href="resume.html">Resume</a>
+          <a class="btn" href="Assets/Sam_Tarr_Resume.pdf" target="_blank" rel="noopener">Resume</a>
         </div>
       </div>
       <figure class="avatar empty">
@@ -59,7 +53,7 @@
         <dt>CAD</dt>
         <dd>Siemens NX, Fusion 360, Onshape</dd>
         <dt>Manufacturing</dt>
-        <dd>Mill, Lathe, 3D printing, </dd>
+        <dd>Mill, Lathe, 3D printing</dd>
         <dt>Programming</dt>
         <dd>C++, Python, MATLAB, C#, ROS / ROS2</dd>
       </dl>
@@ -81,7 +75,6 @@
       </div>
       <div class="m-text">
         <h2 id="m-title"></h2>
-        <p class="res" id="m-res"></p>
         <p id="m-text"></p>
         <p class="tags" id="m-tags"></p>
       </div>
@@ -92,53 +85,53 @@
     const IMG = 'Assets/Images/';
     const PROJECTS = [
       {
-        title: 'Vehicle Integration Test & Evaluation at Aurora',
-        result: 'Worked as a test engineer, creating test plans and validating test results. Also built multiple bespoke tools to streamline post-test analysis process.',
-        text: 'On the vehicle integration test and evaluation team for the Aurora Driver 2.0 release, I created/updated 30+ test plans, validated results from on-track testing, and built tools to speed up post-test analysis. I also moved a subset of track tests into an offline simulation environment to cut down on time on the track.',
-        tags: 'Test planning, data analysis, simulation',
-        imgs: ['aurora-1.jpg', 'aurora-2.jpg']
+        title: "Vehicle Integration Test & Evaluation at Aurora",
+        summary: "Test plans, results validation, and analysis tools for Aurora Driver 2.0.",
+        text: "On the vehicle integration test and evaluation team for the Aurora Driver 2.0 release, I created and updated 30+ test plans and validated results from on-track testing. I built tools that streamlined post-test analysis, saving the team over 20 hours per testing cycle, and moved a subset of track tests into an offline simulation environment to cut down on time on the track.",
+        tags: "Test planning, data analysis, simulation",
+        imgs: ["aurora-1.jpg", "aurora-2.jpg"]
       },
       {
-        title: 'Drivetrain Data Acquisition',
-        result: 'Designed and built a data acquisition board that collects RPM data on our Baja car\'s transmission.',
-        text: 'I designed a custom PCB in KiCad to measure engine RPM and CVT secondary RPM. The shift data is currently being used to tune our CVT for YJR \'27.',
-        tags: 'Teensy 4.1, C++, KiCad, MATLAB',
-        imgs: ['cvt-daq-1.jpg', 'cvt-daq-2.jpg', 'cvt-daq-3.jpg', 'cvt-daq-4.jpg']
+        title: "Drivetrain Data Acquisition",
+        summary: "Custom PCB that logs engine and CVT RPM on our Baja car.",
+        text: "I designed a custom PCB in KiCad to measure engine RPM and CVT secondary RPM, taking it from a breadboard prototype to a finished board over three design iterations. The shift data helped cut our 100m acceleration time by over 0.200 s and is now being used to tune our CVT for the 2027 car.",
+        tags: "Teensy 4.1, C++, KiCad, MATLAB",
+        imgs: ["cvt-daq-1.jpg", "cvt-daq-2.jpg", "cvt-daq-3.jpg", "cvt-daq-4.jpg"]
       },
       {
-        title: 'Wheel Force Transducer Testing',
-        result: 'Developed test plans for the Wheel Force Transducer and ran testing to collect load cases to aid with the development of YJR \'27.',
-        text: 'I set up and helped lead a testing cycle with a Michigan Scientific Wheel Force Transducer to measure the forces and moments on a wheel. We collected data from four linear potentiometers on the shocks simultaneously, which allowed us to validate our data.',
-        tags: 'Wheel force transducer, linear potentiometers, data validation',
-        imgs: ['wft-1.jpg', 'wft-2.jpg', 'wft-3.jpg']
+        title: "Wheel Force Transducer Testing",
+        summary: "Load-case testing with a wheel force transducer for the 2027 car.",
+        text: "I developed the test plans and helped lead a testing cycle with a Michigan Scientific Wheel Force Transducer, which measures the forces and moments on a wheel, to collect load cases for the development of the 2027 car. We also recorded four linear potentiometers on the shocks at the same time, which let us validate the data.",
+        tags: "Wheel force transducer, linear potentiometers, data validation",
+        imgs: ["wft-1.jpg", "wft-2.jpg", "wft-3.jpg"]
       },
       {
-        title: 'YJR \'27 Steering Wheel',
-        result: 'Designed, analyzed, and currently manufacturing',
-        text: 'Designed the wheel for University of Rochester Baja SAE\'s 2027 car in NX, containing a 4.3\u2033 display and custom PCB with an STM32. Capable of displaying live sensor data to the driver that it recieves over CAN bus. FEA was done to ensure it is strong enough for use during competition. A custom quick release was also designed and prototyped.',
-        tags: 'Siemens NX, FEA, Enclosure Design, Embedded Systems',
-        imgs: ['steering-wheel-1.jpg', 'steering-wheel-2.jpg', 'steering-wheel-3.jpg']
+        title: "2027 Car Steering Wheel",
+        summary: "Steering wheel with a live-data display, now in manufacturing.",
+        text: "I designed the steering wheel for University of Rochester Baja SAE’s 2027 car in NX. It holds a 4.3\u2033 display and a custom STM32 PCB that shows the driver live sensor data received over CAN bus. I ran FEA to confirm it is strong enough for competition, and designed and prototyped a custom quick release. The wheel is currently being manufactured.",
+        tags: "Siemens NX, FEA, Enclosure Design, Embedded Systems",
+        imgs: ["steering-wheel-1.jpg", "steering-wheel-2.jpg", "steering-wheel-3.jpg"]
       },
       {
-        title: 'Modular CAN Bus Data Acquisition',
-        result: 'STM32 Based CAN Bus modular DAQ system that allows for collecting data from new sensors in minutes.',
-        text: 'A modular system built on a custom STM32 PCB. There are multiple CAN bus nodes throughout the car, each of them having sensors in its proximity wired.',
-        tags: 'STM32 development, CAN bus, PCB design, Enclosure Design',
-        imgs: ['can-daq-1.jpg', 'can-daq-2.jpg', 'can-daq-3.jpg']
+        title: "Modular CAN Bus Data Acquisition",
+        summary: "Modular CAN bus system that adds new sensors in minutes.",
+        text: "A modular data acquisition system built on a custom STM32 PCB. CAN bus nodes are placed throughout the car, and each node has the sensors near it wired in, so a new sensor can be added in minutes.",
+        tags: "STM32 development, CAN bus, PCB design, Enclosure Design",
+        imgs: ["can-daq-1.jpg", "can-daq-2.jpg", "can-daq-3.jpg"]
       },
       {
-        title: 'Model rocket',
-        result: '1,500 ft apogee at Mach 0.6',
-        text: 'Led a launch that reached 1,500 feet at Mach 0.6. I calculated the aerodynamic forces for stability, designed the fin can and nose cone in Fusion 360 and 3D printed them, wired a fail-safe launch controller, and built a portable launch pad.',
-        tags: 'Fusion 360, 3D printing, launch controller',
-        imgs: ['rocket-1.jpg', 'rocket-2.jpg', 'rocket-3.jpg']
+        title: "Model Rocket",
+        summary: "Reached 1,500 ft at Mach 0.6.",
+        text: "I led a launch that reached 1,500 feet at Mach 0.6. I calculated the aerodynamic forces for stability, designed the fin can and nose cone in Fusion 360 and 3D printed them, wired a fail-safe launch controller, and built a portable launch pad.",
+        tags: "Fusion 360, 3D printing, launch controller",
+        imgs: ["rocket-1.jpg", "rocket-2.jpg", "rocket-3.jpg"]
       },
       {
-        title: 'Self-balancing inverted pendulum',
-        result: 'Built from scratch for a STEM symposium',
-        text: 'Designed the pendulum from scratch in Fusion 360 and implemented a PID controller in C++ to balance it.',
-        tags: 'Fusion 360, C++, PID control',
-        imgs: ['pendulum-1.jpg', 'pendulum-2.jpg']
+        title: "Self-Balancing Inverted Pendulum",
+        summary: "Built from scratch for a STEM symposium.",
+        text: "I designed the pendulum from scratch in Fusion 360 and implemented a PID controller in C++ to balance it.",
+        tags: "Fusion 360, C++, PID control",
+        imgs: ["pendulum-1.jpg", "pendulum-2.jpg"]
       }
     ];
 
@@ -154,7 +147,7 @@
       b.setAttribute('aria-haspopup', 'dialog');
       b.innerHTML = '<div class="thumb empty"><img alt=""></div><div class="info"><h3></h3><p class="res"></p></div>';
       b.querySelector('h3').textContent = p.title;
-      b.querySelector('.res').textContent = p.result;
+      b.querySelector('.res').textContent = p.summary;
       b.addEventListener('click', () => open(i));
       grid.appendChild(b);
       Promise.all(p.imgs.map(n => exists(IMG + n))).then(r => {
@@ -194,7 +187,6 @@
       cur = i; idx = 0;
       const p = PROJECTS[i];
       $('m-title').textContent = p.title;
-      $('m-res').textContent = p.result;
       $('m-text').textContent = p.text;
       $('m-tags').textContent = p.tags;
       show(0);
