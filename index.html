@@ -21,7 +21,7 @@
       <div class="text">
         <h1>Hi I&rsquo;m <span class="name">Sam.</span></h1>
         <p class="lede">I build and test electronics and hardware.</p>
-        <p class="bio">I'm a mechanical engineering student at the University of Rochester. I spent last summer on the
+        <p class="bio">I'm a mechanical engineering student with a minor in electrical engineering at the University of Rochester. I spent last summer on the
           Vehicle Integration Test & Evaluation team at Aurora Innovation. I'm currently the Electronics and Data
           Acquisition lead for University of Rochester Baja SAE (Yellowjacket Racing).</p>
         <div class="actions">
@@ -48,14 +48,16 @@
     <section aria-labelledby="skills-h">
       <h2 id="skills-h">Skills</h2>
       <dl class="skills">
-        <dt>Electrical</dt>
-        <dd>PCB design (KiCad), CAN bus, STM32 development, analog and digital circuits, soldering</dd>
-        <dt>CAD</dt>
-        <dd>Siemens NX, Fusion 360, Onshape</dd>
+        <dt>Electronics</dt>
+        <dd>PCB design (KiCad), STM32, Teensy, CAN bus, analog and digital circuits, soldering</dd>
+        <dt>Test &amp; Instrumentation</dt>
+        <dd>Test planning, data acquisition, sensor integration, data analysis and validation, oscilloscopes, signal generators, multimeters, bench power supplies</dd>
+        <dt>CAD &amp; Analysis</dt>
+        <dd>Siemens NX, Fusion 360, Onshape, FEA</dd>
         <dt>Manufacturing</dt>
-        <dd>Mill, Lathe, 3D printing</dd>
+        <dd>Mill, lathe, 3D printing, laser cutting, hand tools</dd>
         <dt>Programming</dt>
-        <dd>C++, Python, MATLAB, C#, ROS / ROS2</dd>
+        <dd>Embedded C++, Python, MATLAB, C#, ROS / ROS2</dd>
       </dl>
     </section>
 
@@ -86,44 +88,44 @@
     const PROJECTS = [
       {
         title: "Vehicle Integration Test & Evaluation at Aurora",
-        summary: "Test plans, results validation, and analysis tools for Aurora Driver 2.0.",
-        text: "On the vehicle integration test and evaluation team for the Aurora Driver 2.0 release, I created and updated 30+ test plans and validated results from on-track testing. I built tools that streamlined post-test analysis, saving the team over 20 hours per testing cycle, and moved a subset of track tests into an offline simulation environment to cut down on time on the track.",
-        tags: "Test planning, data analysis, simulation",
+        summary: "Test plans, pass/fail evaluation, and analysis tools for Aurora Driver 2.0.",
+        text: "On the vehicle integration test and evaluation team for the Aurora Driver 2.0 release, I wrote and updated 30+ test plans against vehicle-level requirements. Each test ran on track with a truck, and the logs were analyzed by the test engineer, who looked at the logged data/events to mark the test pass or fail. I also built tools that streamlined that analysis, saving the team over 20 hours per testing cycle, and moved a subset of track tests into an offline simulation environment to cut down on time on the track.",
+        tags: "Test planning, data analysis, simulation, Python, C++",
         imgs: ["aurora-1.jpg", "aurora-2.jpg"]
       },
       {
         title: "Drivetrain Data Acquisition",
         summary: "Custom PCB that logs engine and CVT RPM on our Baja car.",
-        text: "I designed a custom PCB in KiCad to measure engine RPM and CVT secondary RPM, taking it from a breadboard prototype to a finished board over three design iterations. The shift data helped cut our 100m acceleration time by over 0.200 s and is now being used to tune our CVT for the 2027 car.",
-        tags: "Teensy 4.1, C++, KiCad, MATLAB",
+        text: "I designed a custom PCB in KiCad to measure engine RPM and CVT secondary RPM. It took three design iterations to reach the final board design. The shift data helped cut our 100m acceleration time by over 0.200 s and is now being used to tune our CVT for the 2027 car.",
+        tags: "PCB design (KiCad), Teensy 4.1, C++, MATLAB, data analysis",
         imgs: ["cvt-daq-1.jpg", "cvt-daq-2.jpg", "cvt-daq-3.jpg", "cvt-daq-4.jpg"]
       },
       {
         title: "Wheel Force Transducer Testing",
         summary: "Load-case testing with a wheel force transducer for the 2027 car.",
         text: "I developed the test plans and helped lead a testing cycle with a Michigan Scientific Wheel Force Transducer, which measures the forces and moments on a wheel, to collect load cases for the development of the 2027 car. We also recorded four linear potentiometers on the shocks at the same time, which let us validate the data.",
-        tags: "Wheel force transducer, linear potentiometers, data validation",
+        tags: "Test planning, wheel force transducer, linear potentiometers, data validation",
         imgs: ["wft-1.jpg", "wft-2.jpg", "wft-3.jpg"]
       },
       {
         title: "2027 Car Steering Wheel",
         summary: "Steering wheel with a live-data display, now in manufacturing.",
-        text: "I designed the steering wheel for University of Rochester Baja SAE’s 2027 car in NX. It holds a 4.3\u2033 display and a custom STM32 PCB that shows the driver live sensor data received over CAN bus. I ran FEA to confirm it is strong enough for competition, and designed and prototyped a custom quick release. The wheel is currently being manufactured.",
-        tags: "Siemens NX, FEA, Enclosure Design, Embedded Systems",
+        text: "I designed the steering wheel for University of Rochester Baja SAE’s 2027 car in NX. It holds a 4.3\u2033 display and a custom STM32 PCB that shows the driver live sensor data received over CAN bus. I designed the enclosure alongside the PCB so the display, electronics, and structure fit together. I ran FEA to confirm a factor of safety above 1.5, and designed and prototyped a custom quick release. The wheel is currently being manufactured.",
+        tags: "Siemens NX, FEA, enclosure design, PCB design (KiCad), STM32, CAN bus",
         imgs: ["steering-wheel-1.jpg", "steering-wheel-2.jpg", "steering-wheel-3.jpg"]
       },
       {
         title: "Modular CAN Bus Data Acquisition",
         summary: "Modular CAN bus system that adds new sensors in minutes.",
-        text: "A modular data acquisition system built on a custom STM32 PCB. CAN bus nodes are placed throughout the car, and each node has the sensors near it wired in, so a new sensor can be added in minutes.",
-        tags: "STM32 development, CAN bus, PCB design, Enclosure Design",
+        text: "A modular data acquisition system built on custom STM32 PCBs in IP67 enclosures, designed to handle vibration, moisture, and EMI. CAN bus nodes are placed throughout the car, and each node has the sensors near it wired in, so a new sensor can be added in minutes.",
+        tags: "STM32, CAN bus, PCB design (KiCad), enclosure design, C++",
         imgs: ["can-daq-1.jpg", "can-daq-2.jpg", "can-daq-3.jpg"]
       },
       {
         title: "Model Rocket",
         summary: "Reached 1,500 ft at Mach 0.6.",
         text: "I led a launch that reached 1,500 feet at Mach 0.6. I calculated the aerodynamic forces for stability, designed the fin can and nose cone in Fusion 360 and 3D printed them, wired a fail-safe launch controller, and built a portable launch pad.",
-        tags: "Fusion 360, 3D printing, launch controller",
+        tags: "Fusion 360, 3D printing, aerodynamic analysis, launch controller",
         imgs: ["rocket-1.jpg", "rocket-2.jpg", "rocket-3.jpg"]
       },
       {
